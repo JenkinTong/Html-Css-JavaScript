@@ -1,0 +1,266 @@
+<html>
+    <head>
+        <title>html常用标签</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=gb2312"/><!--这是浏览器解析这个Html文件的编码方式-->
+    </head>
+    <body>
+        <h1>H1最大</h1><!--标题标签，如果使用标提时使用，不要为了总体看起来大而使用-->
+        <h2>H2<h2>
+        <h2>H3<h2>
+        <h2>H4<h2>
+        <h2>H5<h2>
+        <h2>H6最小<h2>
+
+
+        <br/><!--回车换行的效果-->
+        <p>这是一段文字<p><!--段落文字-->
+
+        
+        <center><p>center包裹着的标签或者内容都会在网页中居中显示</p></center><!--center包裹着的标签或者内容都会在网页中居中显示-->
+
+
+        H<sub>2</sub></sub>o<!--下标-->
+        <br/>
+        10<sup>2</sup><!--上标-->
+
+        <b>加粗</b>
+        <strong>加粗</strong>
+        <i>斜体</i>
+        <u>下划线</u>
+
+       
+        <font color="red" face="微软雅黑" size="7">这是一个文字效果</font><!--文字标签-->
+
+       
+        <hr width="200" size="1" align="center"/><!--水平线align="center"水平居中对齐-->
+        <hr width="1" size="100" align="left"/><!--把宽度设置成1，厚度设置成100，会变成一个竖线-->
+
+        <pre>Welcome       TO        China</pre><!--预格式化标签，即：在源代码现实的什么格式，在浏览器就显示的什么格式-->
+
+
+        &lt;<!--小于号-->
+        &gt;<!--大于号-->
+        &nbsp;<!--空格-->
+        &copy;<!--版权符号-->
+
+
+        <a href="www.google.com" title="Google" target="_blank">Google</a><!--超链接标签，target=_blank表示在新窗口或选项卡打开-->
+        <!--_blabk在新窗口打开-->
+        <!--_self在新窗口打开-->
+        <!--_parent在父窗口中打开-->
+        <!--_top表示在顶级窗口中打开-->
+
+
+
+        <a href="#pos1">抛的使用</a> <!--点击会跳到id为pos1的位置-->
+        <h2 id="pos1">跳到我这里来</h2>
+
+
+        <img border="1" src="//www.baidu.com/img/bd_logo1.png" alt="baidu" width="100px" height="80px"/>
+        <!--alt是图片不显示时提示的文字-->
+
+
+
+        <dl><!--描述列表-->
+            <dt>杜兰特:</dt>
+            <dd>小前锋，得分能力较强，获得2次总决赛MVP</dd>
+            <dt>库里:</dt>
+            <dd>三次NBA总冠军，三分能力突出，两次常规赛MVP</dd>
+        </dl>
+
+
+        <ul type="square"><!--无序列表,type可以改变前面的样式-->
+            <li>乔丹</li>
+            <li>科比</li>
+            <li>詹姆斯</li>
+            <li>杜兰特</li>
+        </ul>
+
+
+        <ul type="I"><!--有序列表type可以改变前面的样式-->
+                <li>乔丹</li>
+                <li>科比</li>
+                <li>詹姆斯</li>
+                <li>杜兰特</li>
+        </ul>
+
+        <!--表格--><!--cellspacing:单元格之间的距离，cellpadding单元格里面文本与单元格内边距-->
+        <table width="800" height="500" border="5" cellspacing="0" cellpadding="0" align="center">
+                <caption align="bottom">考试成绩表</caption>
+                <thead>
+                    <tr>
+                        <!-- th的作用：让th中的数据自动居中，加粗 -->
+                        <th>英语成绩</th>
+                        <th>数学成绩</th>
+                        <th>语文成绩</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>90</th>
+                        <td>99</td>
+                        <td rowspan="3">100</td>
+                    </tr>
+                    <tr>
+                        <td>90</td>
+                        <td>99</td>
+                    <!--	<td>100</td>  -->
+                    </tr>
+                    <tr>
+                        <td>90</td>
+                        <td>99</td>
+                    <!--	<td align="center" valign="bottom">100</td> -->
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                    <!--合并单元格：跨列 -->
+                        <td colspan="3">英语平均分：xx</td>
+                        <!--
+                        <td>数学平均分：xx</td>
+                        <td>语文平均分：xx</td>
+                        -->
+                    </tr>
+                </tfoot>
+        </table>
+
+
+
+        <!--from表单元素-->
+        <!--
+            表单元素提交的的是表单元素value属性的值
+            服务器端是通过name属性接收的，所以要有name属性
+        -->
+        <form action="2.html" method="post">
+                <p> 
+                    <!-- maxlength="5"表示只能输入5个长度，size是文本框的长度-->           
+                用户名：<input maxlength="5" size="50" name="txtUserName" type="text" value=""/>
+                </p>
+                <p>
+                    <!--
+			        用户名：<input disabled="disabled" name="txtUserName" type="text" value=""/>
+		            -->
+                     <!--readonly="readonly"表示这个文本框只读，不能做任何改变，disabled="disabled"：禁用这个元素，不能被提交-->           
+                    邮箱：<input name="txtEmail" value="sample@yahoo.com" readonly="readonly"/>
+                </p>
+                <p>
+                    密码：<input name="txtPassword" type="password"/>
+                </p>
+                <p>
+                    确认密码：<input name="txtConfirmPassword" type="password"/>
+                </p>
+                <p>
+                    性别：
+                    <!--
+                        多个radio标签把name设置成相同，选择的时候只允许单选
+                    -->
+                    <input checked="checked" type="radio" name="gender" value="male"/>男
+                    <input type="radio" name="gender" value="female"/>女
+                    <input type="radio" name="gender" value="secret" id="rdoSecret"/>
+                    <label for="rdoSecret">保密</label><!--for="rdoSecret"：当鼠标点击文字（保密）的时候，会选中id为rdoSecret单选按钮-->
+                </p>
+                <p>
+                    省
+                    <!--
+                        Select标签multiple="multiple设置可以多选
+                        size="5"只显示5个
+                    -->
+                    <select name="selProvince" size="5" multiple="multiple">
+                        <option value="10" selected="selected">黑龙江</option>
+                        <option value="11">吉林</option>
+                        <option value="12">辽宁</option>
+                        <option value="13">河北</option>
+                        <option value="10">黑龙江</option>
+                        <option value="11">吉林</option>
+                        <option value="12">辽宁</option>
+                        <option value="13">河北</option>
+                        <option value="10">黑龙江</option>
+                        <option value="11">吉林</option>
+                        <option value="12">辽宁</option>
+                        <option value="13">河北</option>
+                    </select>
+                    市
+                    <select name="selCity">
+                        <optgroup label="黑龙江"><!--分组-->
+                            <option value="101">哈尔滨</option>
+                            <option value="102" selected="selected">齐齐哈尔</option>
+                        </optgroup>
+                        <optgroup label="吉林">
+                            <option value="111">长春</option>
+                            <option value="112">松原市</option>
+                        </optgroup>
+                        <optgroup label="辽宁">
+                            <option value="121">锦州</option>
+                            <option value="122">沈阳</option>
+                        </optgroup>
+                        <optgroup label="河北">
+                            <option value="131">廊坊</option>
+                            <option value="132">保定</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <fieldset><!--设置外面加了边框，类似WinForm中的Groupbox效果-->
+                        <legend>兴趣爱好</legend>
+                        <input type="checkbox" value="running"/>跑步
+                        <input type="checkbox" value="cf"/>吃饭
+                        <input type="checkbox" value="sj" checked="checked"/>睡觉
+                        <input type="checkbox" value=".net" id="chkLearnNet"/>
+                        <label for="chkLearnNet">学习.net</label>
+                    </fieldset>
+                </p>
+                <p>
+                选择头像：
+                <input type="file"/>
+                </p>
+                <p>
+                    请仔细阅读协议：
+                    <br/>
+                    <textarea cols="80" rows="10">
+                        一、总则
+                        1．1　用户应当同意本协议的条款并按照页面上的提示完成全部的注册程序。用户在进行注册程序过程中点击"同意"按钮即表示用户与百度公司达成协议，完全接受本协议项下的全部条款。 
+                        1．2　用户注册成功后，百度将给予每个用户一个用户帐号及相应的密码，该用户帐号和密码由用户负责保管；用户应当对以其用户帐号进行的所有活动和事件负法律责任。 
+                        1．3　用户一经注册百度帐号，除非子频道要求单独开通权限，用户有权利用该账号使用百度各个频道的单项服务，当用户使用百度各单项服务时，用户的使用行为视为其对该单项服务的服务条款以及百度在该单项服务中发出的各类公告的同意。 
+                        1．4　百度会员服务协议以及各个频道单项服务条款和公告可由百度公司随时更新，且无需另行通知。您在使用相关服务时,应关注并遵守其所适用的相关条款。 
+                    </textarea>
+                </p>
+                <p>
+                    <input type="checkbox" value="agree"/>同意
+                </p>
+                <p>
+                    <!--
+                    <input type="submit" value="注册"/>
+                    -->
+                    <input type="image" src="000.jpg"/>
+                    <input type="reset" value="重置"/>
+                </p>
+                <p>
+                    <input type="button" value="这是一个普通按钮"/>
+                </p>
+            </form>
+        
+
+            <!--
+                div和span标签
+                都是容器
+                span里面一般写文字
+                div用来布局
+
+                将元素放在容器里面这是统一的样式，方便管理
+            -->
+
+            test test<div style="border:1px solid blue; width: 100px;height: 100px">Hello World</div><!--div是块级元素，独占一行-->
+            test test<span style="border:1px solid red">Hi Html</span><!--span是块级元素，不会独占一行-->
+            <!-- 
+                行内元素不能这只高和宽，是不起作用的
+                要设置高和宽先让它变成块级元素display:block
+            -->
+            <span style="border:1px solid red; width: 100px;height: 100px">Hi Html</span>
+
+
+
+            test test<div style="border:1px solid blue; display: inline">Hello World</div><!-- display: inline将div设置成行内元素不会独占一行-->
+            test test<span style="border:1px solid red; display:block ">Hi Html</span><!-- display:block将span设置成块级元素，独占一行-->
+
+     </body>
+</html>
