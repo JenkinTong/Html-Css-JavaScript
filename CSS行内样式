@@ -1,0 +1,35 @@
+<div style="border-top: 1px solid red; 
+        border-right: 2px dotted blue; 
+        border-bottom: 3px dashed yellow;
+        border-left: 4px double black; 
+        font-size: 20px; 
+        width: 800px; 
+        height: 600px;
+        color: Red;
+        font-style: italic; 
+        font-weight: bolder; 
+        text-align: center; 水平居中
+        line-height: 35px;
+        overflow:scroll; div里面的内容超出div的高度后自动出现滚动条
+        background-color: #ff2bff;
+        background-image: url(images/1.png);
+        background-repeat: repeat-x;
+        margin: 0 auto; 
+        display: block;">
+        Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  
+        Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  
+        Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  
+        Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  
+        Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  Hi Hello  
+    </div>
+    
+    
+         text-align: center; 水平居中
+         overflow:auto; div里面的内容超出div的高度后自动出现滚动条
+         overflow:hidden; div里面的内容超出div的高度后自动隐藏超出的部分
+         overflow:scroll; 设置div里面的内容超出div的高度后出现滚动条
+         margin: 0 auto; 设置div的边距，0是上下边距，auto表示左右边距自定，会水平居中
+         margin: 20px 50px 60px 80px;上右下左边距，顺时针
+         margin: 20px 50px; 写2个值 20px上下边距 50px左右边距
+         margin: 20px; 一个值表示上下左右都为20px
+         padding: 50px; 表示的元素里面内容与元素的边距
