@@ -1,0 +1,124 @@
+ /*标签选择器*/
+         div
+        {
+            border: 1px solid blue;
+            color: Red;
+            background-color: Yellow;
+        }
+        
+        p
+        {
+            font:50px 隶书;
+            background-color:Blue;
+            color:Red;
+        }
+        
+        /*Id选择器*/
+        #txtUserName
+        {
+            border:1px solid blue;
+            color:Yellow;
+            font:20px 宋体;
+        }
+        
+        
+        /*类选择器*/
+        .cls
+        {
+            background-color:Blue;
+            color:Red;
+            border:3px solid yellow;
+            font:25px 隶书;
+        }
+
+
+        /*标签+类选择器*/
+        /*
+        选择span标签里面有有class='test'的标签
+        */
+        span.test
+        {
+            background-color: Red;
+        }
+        
+        p.test
+        {
+            background-color: Blue;
+        }
+
+        
+        
+        /*层次选择器，表示选取div下的所有的p元素*/       
+        div p
+        {
+            color:Red;
+        }
+      
+        /*
+        选取class='cls'的标签下所有class='test'的标签
+        可以是标签，可以是类，可以是id
+        */
+        .cls .test
+        {
+            color: Blue;
+        }
+        
+        /*
+        选取id="a"的元素下所有的div
+        */
+        #a div
+        {
+            color: Blue;
+        }
+
+        /*
+        组合选择器
+        可以是标签，可以是类，可以是id
+        */
+        h1,h2,h3,h4,h5,h6,div,span,p,#dv1
+        {
+            color:Red;
+        }
+
+
+
+
+        /*伪选择器*/
+        /*默认*/
+        a:link
+        {
+            color: Black;
+            text-decoration: none;
+            font: 25px 宋体;
+        }
+        
+        /*激活，鼠标点击时*/
+        a:active
+        {
+            color: Blue;
+            text-decoration: none;
+        }
+        
+        /*鼠标悬浮*/
+        a:hover
+        {
+            color: Red;
+            text-decoration: underline;
+            font-size: 50px;
+            font-family: 文鼎霹雳体;
+        }
+                       
+        /*点击完毕以后*/
+        a:visited
+        {
+            color: Lime;
+            text-decoration: underline;
+        }
+               
+        /*获得焦点*/
+        input:focus
+        {
+            border: 1px solid red;
+        }
+
+
