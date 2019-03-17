@@ -1,0 +1,51 @@
+ /*
+        文档流
+        Html元素默认是流式布局排列的，即：先写的元素在前面占一行，后写的元素在后面占一行  
+        */
+
+        /*
+        默认创建一个的元素都是按照流式布局的，即按照元素的先后顺序
+        如果想让后面的元素显示在前面元素的前面
+        首先需要脱离文档流：设置position：absolute
+        再给这个元素设置距离左边和上边的距离或者距离右边和下边的距离
+        */
+        #dv2
+        {
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            position:absolute;/*绝对定位 相对于页面左上角*/
+            position:fixed;/*固定在屏幕的可视区域,如果页面的内容过多，拖动时，这个div的会一直显示*/
+            position:relative;/*相对定位，即位置会随是按照原来流式布局的位置开始算，不是按照屏幕左上角计算的*/
+            left: 500px;
+            top: 300px;          
+        }
+
+
+        /*
+        float浮动
+        浮动，只能向左浮动，或者向右浮动。但是依然依赖于在html源代码中，编写的html的顺序。
+        设置浮动之后会脱离文档流，该元素后面的元素会顶上来
+        */
+        #dv1
+        {
+            width: 100px;
+            height: 102px;
+            background-color: Blue;
+            float: left;
+            
+        }
+        #dv2
+        {
+            width: 100px;
+            height: 100px;
+            background-color: Red;
+            float: left;
+        }
+        #dv3
+        {
+            width: 100px;
+            height: 100px;
+            background-color: Yellow;
+            float: left;
+        }
