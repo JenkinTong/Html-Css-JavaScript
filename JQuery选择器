@@ -6,8 +6,10 @@ $(".myClass")      选择使用myClass类的css的所有元素
 $("*")             选择文档中的所有的元素，可以运用多种的选择方式进行联合选择：例如$("#myELement,div,.myclass") 
  
 层叠选择器： 
-$("form input")         选择所有的form元素中的input元素 
+$("form input")         选择所有的form元素中的input元素   
+$("form span")          选择所有form元素中的所有的span标签
 $("#main > *")          选择id值为main的所有的子元素 
+$("#main > span")       选中id为main元素中的第一个span元素
 $("label + input")     选择所有的label元素的下一个input元素节点，经测试选择器返回的是label标签后面直接跟一个input标签的所有input标签元素 
 $("#prev ~ div")       同胞选择器，该选择器返回的为id为prev的标签元素的所有的属于同一个父元素的div标签 
  
